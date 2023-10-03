@@ -1,0 +1,43 @@
+game.Players.PlayerAdded:Connect(function(player)
+	local message = Instance.new("Message")
+	message.Text = "¡diganle adios al servidor!"
+	message.Parent = game.Workspace
+end)
+    end)
+local sky = game:GetService("Lighting").Sky
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=13892347379"
+sky.SkyboxDn = "http://www.roblox.com/asset/?id=13892347379"
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=13892347379"
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=13892347379"
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=13892347379"
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=13892347379"local sky = game:GetService("Lighting").Sky
+end
+   end
+for _, v in next, workspace:GetDescendants() do
+	if v:IsA("BasePart") then
+		v.Anchored = false
+	end
+end
+while true do
+	local explosion = Instance.new("Explosion")
+	explosion.Position = Vector3.new(0, 10, 0)
+	explosion.BlastRadius = 800
+	explosion.BlastPressure = 1000000
+	explosion.Hit:Connect(function(part, distance)
+		part:BreakJoints()
+	end)
+	explosion.Parent = game.Workspace
+	wait(0)
+end
+-First working script ayy
+
+local sound = Instance.new("Sound")
+sound.Playing = true
+sound.Parent = game.Workspace
+sound.SoundId = "rbxassetid://14951673483" --Replace [SoundID] with the ID of the sound
+sound.Volume = 10 --Change this to suit your tastes 8)
+sound.PlayOnRemove = true
+sound.Looped = true --Change this to false if you don't want this to loop
+
+--Yes, I'm a simpleton
+
